@@ -1,3 +1,4 @@
+
 // -------------------------- React ---------------------------- //
 import React , { useState }  from 'react'
 
@@ -7,9 +8,10 @@ import CommonSection from "../components/ui/Common-section/CommonSection";
 // -------------------------- Axios ---------------------------- //
 import axios from 'axios'
 
-const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 // -------------------------- CSS ---------------------------- //
 import '../styles/Post.css'
+
+const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 
 const Post = () => {
 

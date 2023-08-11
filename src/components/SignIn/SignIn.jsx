@@ -7,10 +7,12 @@ import { useState } from 'react'
 // ----------- axios --------------- //
 import axios from 'axios'
 
-const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
+
 
 // ----------- css file --------------- //
 import './SignIn.css'
+
+const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 
 const SignIn = () => {
 
