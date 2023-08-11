@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import './SignUp.css'
-
+const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 
 const SignUp = () => {
 
@@ -12,7 +12,7 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('')
     const handleSignUp = async (e) => {
         e.preventDefault()
-        const response = await axios.post('http://localhost:8000/api/users/create', {
+        const response = await axios.post(`${baseUrl}/api/users/create`, {
         method: 'POST',
         headers:{
             'Content-Type': 'application/json',

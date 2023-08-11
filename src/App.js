@@ -2,6 +2,7 @@
 // Importing the useEffect hook from the react library to make HTTP requests to the backend when the component mounts for the first time and display the response in the console of the browser for testing purposes.
 
 import { useEffect } from "react";
+const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 
 // Importing the Layout component
 import Layout from "./components/Layout/Layout";
@@ -15,7 +16,7 @@ import "./app.css";
 function App() {
 
     useEffect(() => {
-        axios.get("http://localhost:8000/api").then((res) => {
+        axios.get(`${baseUrl}/api`).then((res) => {
         console.log(res)
     })
     }, [])  

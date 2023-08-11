@@ -7,6 +7,7 @@ import CommonSection from "../components/ui/Common-section/CommonSection";
 // -------------------------- Axios ---------------------------- //
 import axios from 'axios'
 
+const baseUrl = "https://backend-nft-vibe-plaza.onrender.com";
 // -------------------------- CSS ---------------------------- //
 import '../styles/Post.css'
 
@@ -22,7 +23,7 @@ const Post = () => {
         const formData = new FormData()
         formData.append('image', image)
         formData.append('caption', caption)
-        const response = await axios.post('http://localhost:8000/api/posts/create', formData, {
+        const response = await axios.post(`${baseUrl}/api/posts/create`, formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
